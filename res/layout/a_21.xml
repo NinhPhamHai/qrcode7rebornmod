@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pageBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp60" />
+    <LinearLayout android:id="@id/tab_bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp60" android:layout_marginTop="@dimen/dp10" android:weightSum="3.0" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/li_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:weightSum="5.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_history" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/selector_history_red_black" />
+                <TextView android:textColor="@drawable/sp_txt_red_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:text="@string/history" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_my_code" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/selector_mycode_red_black" />
+                <TextView android:textColor="@drawable/sp_txt_red_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:text="@string/create" />
+            </LinearLayout>
+            <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_favorite" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/selector_favorite" />
+                <TextView android:textColor="@drawable/sp_txt_red_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:text="@string/favorite" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_setting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp5" android:layout_marginEnd="@dimen/dp15">
+                <ImageView android:id="@id/iv_user_image" android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/selector_setting_icon" />
+                <TextView android:textColor="@drawable/sp_txt_red_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp5" android:text="@string/setting" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_scan" android:layout_width="@dimen/dp100" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="@dimen/dp70" android:layout_height="@dimen/dp70" android:layout_marginBottom="-10.0dip" android:src="@drawable/qr7_scan_button" />
+        <TextView android:textColor="@drawable/sp_txt_red_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:layout_marginBottom="@dimen/dp5" android:text="@string/scan" />
+    </LinearLayout>
+</RelativeLayout>

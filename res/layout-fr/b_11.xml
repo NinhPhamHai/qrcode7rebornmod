@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_header" android:background="@drawable/qr7_header" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qr_barcode_scanner" android:fontFamily="@font/ttnorms_bold" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp70" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/li_offer" android:background="@drawable/qr7_popup_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp70" android:layout_margin="@dimen/dp20" android:paddingStart="@dimen/dp20" android:paddingEnd="@dimen/dp20">
+                <ImageView android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:src="@drawable/qr7_popup_icon" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                    <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pro_offer" />
+                    <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp3" android:text="@string/unlock_all_features_in_the_application" />
+                </LinearLayout>
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_lock_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lock_app" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+                <Switch android:id="@id/lock_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_vibration_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vibration" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+                <Switch android:id="@id/vibration_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_sound_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sound" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+                <Switch android:id="@id/sound_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/about_app" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_info_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/about_app" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/terms_of_use_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_terms_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/terms_of_use" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/privacy_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_privacy_policy_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/privacy_policy" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/feedback_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_feedback_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feedback" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/rate_us_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_rate_us_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rate_us" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/contact_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_contact_us_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/contact_us" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp50" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/share_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_share_app_icon" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_app" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

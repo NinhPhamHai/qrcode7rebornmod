@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_history" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp40" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qr7_history_empty" />
+        <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="@string/you_haven_t_scanned_any_barcode_and_qrcode" android:fontFamily="@font/ttnorms_regular" />
+    </LinearLayout>
+</RelativeLayout>

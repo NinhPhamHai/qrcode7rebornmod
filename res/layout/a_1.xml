@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp220">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qr7_about_us_bg" android:scaleType="fitXY" />
+                <ImageView android:id="@id/back_iv" android:padding="@dimen/dp10" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:src="@drawable/qr7_back_white" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:src="@drawable/qr7_about_us" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/sp16" android:textColor="@color/white" android:id="@id/about_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/about_app" android:layout_below="@id/about_icon" android:layout_centerHorizontal="true" android:fontFamily="@font/ttnorms_regular" />
+                    <TextView android:textSize="@dimen/sp14" android:textColor="@color/white" android:id="@id/version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp15" android:layout_marginTop="@dimen/dp4" android:layout_marginRight="@dimen/dp15" android:text="@string/v_1_0" android:layout_below="@id/about_label" android:layout_centerHorizontal="true" android:fontFamily="@font/ttnorms_medium" android:layout_marginStart="@dimen/dp15" android:layout_marginEnd="@dimen/dp15" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/black" android:id="@id/about_us_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp15" android:layout_marginTop="@dimen/dp4" android:layout_marginRight="@dimen/dp15" android:text="@string/dummy_text" android:fontFamily="@font/ttnorms_medium" android:layout_marginStart="@dimen/dp15" android:layout_marginEnd="@dimen/dp15" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

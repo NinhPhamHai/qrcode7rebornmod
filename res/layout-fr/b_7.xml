@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_txt" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_text" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_text_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text" android:layout_toRightOf="@id/iv_text" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_text" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_url" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_url" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_url_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/url" android:layout_toRightOf="@id/iv_url" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_url" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_phone" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_phone" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_phone_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/phone" android:layout_toRightOf="@id/iv_phone" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_phone" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_contact" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_contact" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_contact_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact" android:layout_toRightOf="@id/iv_contact" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_contact" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_email" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_email" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_email_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/email" android:layout_toRightOf="@id/iv_email" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_email" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_sms" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_sms" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_sms_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sms" android:layout_toRightOf="@id/iv_sms" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_sms" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_location" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_location" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_location_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/location" android:layout_toRightOf="@id/iv_location" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_location" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_calendar" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_calendar" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_calendar_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calendar" android:layout_toRightOf="@id/iv_calendar" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_calendar" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_wifi" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_wifi" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_wifi_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wi_fi" android:layout_toRightOf="@id/iv_wifi" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_create_wifi" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_facebook" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_facebook" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_facebook_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/facebook" android:layout_toRightOf="@id/iv_facebook" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_facebook" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_facebook" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_instagram" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_insta" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_instagram_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/instagram" android:layout_toRightOf="@id/iv_insta" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_instagram" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_instagram" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_spotify" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_spotify" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_spotify" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/spotify" android:layout_toRightOf="@id/iv_spotify" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_spotify" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_spotify" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_viber" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_viber" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_viber_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/viber" android:layout_toRightOf="@id/iv_viber" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_viber" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_viber" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_twitter" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_twiter" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_twitter_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/twitter" android:layout_toRightOf="@id/iv_twiter" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_twitter" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_twiter" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_whatsapp" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_whatsapp" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_whatsapp_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/whatsapp" android:layout_toRightOf="@id/iv_whatsapp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_whatsapp" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_create_whatsapp" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

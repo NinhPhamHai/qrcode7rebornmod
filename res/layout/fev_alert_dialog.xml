@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp40" android:layout_marginEnd="@dimen/dp40" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:paddingRight="@dimen/dp30" android:layout_width="fill_parent" android:layout_height="@dimen/dp100" android:src="@drawable/qr7_alaert_bg" android:scaleType="fitXY" android:paddingEnd="@dimen/dp30" />
+            <ImageView android:id="@id/iv_logo" android:layout_width="@dimen/dp100" android:layout_height="@dimen/dp100" android:layout_marginTop="@dimen/dp20" android:src="@drawable/qr7_favorite_red" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/are_you_sure_want_to_unfavourite_this_link" android:layout_below="@id/iv_logo" android:paddingStart="@dimen/dp20" android:paddingEnd="@dimen/dp20" />
+            <LinearLayout android:id="@id/li_btn" android:layout_width="fill_parent" android:layout_height="@dimen/dp60" android:layout_marginTop="@dimen/dp20" android:layout_marginBottom="@dimen/dp20" android:layout_below="@id/tv_title">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/selector_btn_red_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/no" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:gravity="center" android:id="@id/tv_dont_cancel" android:background="@drawable/selector_btn_red_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/yes" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

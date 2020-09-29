@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sp_filter_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp20">
+        <ImageView android:id="@id/iv_reset" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_reset_black" />
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/filter" android:layout_weight="1.0" android:fontFamily="@font/ttnorms_regular" />
+        <ImageView android:id="@id/iv_close" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_close_black" android:layout_marginEnd="@dimen/dp20" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp20">
+        <TextView android:textSize="@dimen/sp18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/result_type" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp20">
+        <TextView android:textSize="@dimen/sp18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by_date" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="@dimen/dp70" android:layout_weight="1.0" app:cardCornerRadius="@dimen/dp15" app:cardUseCompatPadding="true">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:textColorHint="@drawable/selector_txt_white_black" android:gravity="center" android:id="@id/tv_today" android:background="@drawable/selector_btn_red_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/today" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="@dimen/dp70" android:layout_weight="1.0" app:cardCornerRadius="@dimen/dp15" app:cardUseCompatPadding="true">
+                <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:textColorHint="@drawable/selector_txt_white_black" android:gravity="center" android:id="@id/tv_yesterday" android:background="@drawable/selector_btn_red_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/yesterday" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="@dimen/dp70" android:layout_weight="1.0" app:cardCornerRadius="@dimen/dp15" app:cardUseCompatPadding="true">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/li_start_date" android:background="@drawable/selector_btn_red_grey" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:textColorHint="@drawable/selector_txt_white_black" android:gravity="center_vertical" android:id="@id/tv_start_date" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/start_date" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" />
+                    <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_calendar_black" android:layout_marginEnd="@dimen/dp10" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="@dimen/dp70" android:layout_weight="1.0" app:cardCornerRadius="@dimen/dp15" app:cardUseCompatPadding="true">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/li_end_date" android:background="@drawable/selector_btn_red_grey" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/sp16" android:textColor="@drawable/selector_txt_white_black" android:textColorHint="@drawable/selector_txt_white_black" android:gravity="center_vertical" android:id="@id/tv_end_date" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/end_date" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp10" />
+                    <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_calendar_black" android:layout_marginEnd="@dimen/dp10" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_done" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="@dimen/dp60" android:text="@string/done" />
+</LinearLayout>

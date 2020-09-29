@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/li_btn" android:layout_centerInParent="true">
+        <ImageView android:layout_width="@dimen/dp150" android:layout_height="@dimen/dp150" android:src="@drawable/qr7_privacy_logo_icon" />
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/privacy_policy" android:fontFamily="@font/ttnorms_bold" />
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/by_tapping_accept_you_agree_to_qr_barcode_scanner_n_privacy_policy_and_terms_of_service" android:fontFamily="@font/ttnorms_regular" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/li_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp20" android:layout_alignParentBottom="true">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_accpet" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="@dimen/dp45" android:text="@string/accept" android:fontFamily="@font/ttnorms_bold" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/colorAccent" android:id="@id/tv_privacy_policy" android:padding="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy" />
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/black" android:padding="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and" />
+            <TextView android:textSize="@dimen/sp14" android:textColor="@color/colorAccent" android:id="@id/tv_terms_use" android:padding="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_of_use" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

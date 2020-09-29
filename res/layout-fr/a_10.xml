@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_header" android:background="@drawable/qr7_nevigation" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="@dimen/dp140">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/li_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qr_barcode_scanner" android:fontFamily="@font/ttnorms_bold" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="@dimen/dp10" android:paddingEnd="@dimen/dp10">
+            <LinearLayout android:gravity="center" android:id="@id/li_qr" android:background="@drawable/selector_btn_white_linghtwhite" android:layout_width="@dimen/dp200" android:layout_height="@dimen/dp50" android:layout_weight="1.0" android:paddingEnd="@dimen/dp20" android:layout_marginEnd="-20.0dip">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/selector_qr_white_red" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp18" android:textColor="@drawable/selector_txt_white_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr_code" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp20" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/li_bar" android:background="@drawable/selector_btn_white_linghtwhite" android:layout_width="@dimen/dp200" android:layout_height="@dimen/dp50" android:layout_weight="1.0" android:paddingStart="@dimen/dp20" android:layout_marginStart="-20.0dip">
+                <ImageView android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/selector_barcode" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp18" android:textColor="@drawable/selector_txt_white_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/barcode" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp15" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.scanqr.barcodereader.contactsmsurlqrgenerator.u.c android:id="@id/c_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header" />
+</RelativeLayout>

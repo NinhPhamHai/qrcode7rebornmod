@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/sp_filter_white" android:layout_width="fill_parent" android:layout_height="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:layout_marginTop="@dimen/dp20" android:src="@drawable/qr7_close_black" android:layout_marginEnd="@dimen/dp30" />
+        <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp20" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

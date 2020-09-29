@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qr7_layer_10_copy_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/qr7_pattern" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/li_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp150" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="@dimen/dp100" android:layout_height="@dimen/dp100" android:src="@drawable/qr7_logo" />
+        <TextView android:textSize="@dimen/sp25" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/qr_barcode_scanner" android:fontFamily="@font/ttnorms_regular" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginTop="@dimen/dp40" android:src="@drawable/qr7_bg_person" android:scaleType="fitXY" android:layout_below="@id/li_logo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp30" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp50" android:src="@drawable/qr7_extras" android:layout_above="@id/iv_pic" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/iv_pic" android:padding="@dimen/dp40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp10" android:src="@drawable/qr7_character" android:layout_alignParentBottom="true" />
+</RelativeLayout>

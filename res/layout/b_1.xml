@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_items" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_text" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_item" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_product" android:layout_toRightOf="@id/iv_text" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_pro_item" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/tv_create_txt" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dp20" app:cardUseCompatPadding="true">
+            <RelativeLayout android:id="@id/rl_isbn" android:layout_width="fill_parent" android:layout_height="@dimen/dp100">
+                <ImageView android:id="@id/iv_pro_isbn" android:layout_width="@dimen/dp50" android:layout_height="@dimen/dp50" android:layout_marginTop="-1.0dip" android:src="@drawable/qr7_pro_red_icon" android:layout_marginStart="-1.0dip" />
+                <ImageView android:id="@id/iv_url" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:src="@drawable/qr7_bar_blue_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" />
+                <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/isbn" android:layout_toRightOf="@id/iv_url" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp20" android:layout_marginEnd="@dimen/dp20" />
+                <ImageView android:id="@id/iv_crete_url" android:background="@drawable/sp_red_circle" android:padding="@dimen/dp20" android:layout_width="@dimen/dp60" android:layout_height="@dimen/dp60" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/qr7_forword_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:ads="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_header" android:background="@drawable/qr7_header" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="@dimen/dp70" android:paddingEnd="@dimen/dp10">
+        <TextView android:textSize="@dimen/sp18" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qr_barcode_scanner" android:layout_toLeftOf="@id/li_filter" android:fontFamily="@font/ttnorms_bold" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" android:layout_toStartOf="@id/li_filter" />
+        <LinearLayout android:id="@id/li_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/iv_choose_image" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_gallery" />
+            <ImageView android:id="@id/iv_flash" android:layout_width="@dimen/dp30" android:layout_height="@dimen/dp30" android:src="@drawable/qr7_flash" android:layout_marginStart="@dimen/dp10" android:layout_marginEnd="@dimen/dp10" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.e.android.codescanner.CodeScannerView android:id="@id/scanner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header" app:autoFocusButtonVisible="false" app:flashButtonVisible="false" app:frameAspectRatioHeight="1.0" app:frameAspectRatioWidth="1.0" app:frameColor="@color/colorAccent" app:frameCornersRadius="@dimen/dp30" app:frameCornersSize="@dimen/dp70" app:frameSize="0.5" app:frameThickness="@dimen/dp5" app:maskColor="#77000000" />
+    <LinearLayout android:orientation="vertical" android:id="@id/li_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp30" android:layout_alignParentBottom="true">
+        <com.b.crystalrangeseekbar.widgets.CrystalSeekbar android:id="@id/rangeSeekbar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp30" android:layout_marginEnd="@dimen/dp30" app:bar_color="@color/white" app:bar_highlight_color="@color/colorAccent" app:data_type="_integer" app:left_thumb_color="@color/white" app:left_thumb_color_pressed="@color/colorAccent" />
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" app:adSize="BANNER" app:adUnitId="@string/banner_ui_id" />
+    </LinearLayout>
+</RelativeLayout>
